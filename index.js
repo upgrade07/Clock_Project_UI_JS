@@ -106,28 +106,28 @@ function setTime(){
     let message1 = document.getElementById('container5')
     
     
-    if(hours>8 && hours<11){
+    if(hours>8 && hours<=11){
         message.innerText =  "Good Moring !! Wake Up!!!"
         message1.innerText = "Go Get ready for Work and pray god !!"
         photo.setAttribute('src','./girl.svg')
         photo.style.height = "400px"
         photo.style.width = "530px"
     }
-    if(hours>11 && hours<15){
+    if(hours>=11 && hours<=14){
         message.innerText =  "Good Afternoon !! Take Some Sleep"
         message1.innerText = "Let's Have Some Lunch !!"
         photo.setAttribute('src','./lunchimage.jpg')
         photo.style.height = "400px"
         photo.style.width = "530px"
     }
-    if(hours>=16 && hours<=19){
+    if(hours>=18 && hours<=20){
         message.innerText =  "Good Evening !!!"
         message1.innerText = "Stop Yawning, Get Some Tea.. It's Just Evening !!"
         photo.setAttribute('src','./tea.png')
         photo.style.height = "400px"
         photo.style.width = "530px"
     }
-    if(hours>19 && hours<24 ){
+    if(hours>=20 ){
         message.innerText =  "Good Night !! Sleep Soon!!!"
         message1.innerText = "Sweet Dreams, Take Care! !!"
     }
